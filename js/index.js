@@ -49,4 +49,12 @@ document.addEventListener('keyup', (e) => {
     }
 })
 
+const header = document.querySelector('.main-navigation')
+console.log(header)
 
+document.addEventListener('scroll', () => {
+   header.style.backgroundColor = 'grey'
+})
+
+// const imgContent = document.querySelectorAll('.img-content')
+// console.log(imgContent)
