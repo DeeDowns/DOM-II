@@ -56,5 +56,13 @@ document.addEventListener('scroll', () => {
    header.style.backgroundColor = 'grey'
 })
 
-// const imgContent = document.querySelectorAll('.img-content')
-// console.log(imgContent)
+const imgContent = document.querySelectorAll('.img-content')
+console.log(imgContent)
+
+
+window.addEventListener('load', () => {
+    alert('hiiii')
+})
+
+
+
