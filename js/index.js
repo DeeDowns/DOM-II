@@ -56,13 +56,25 @@ document.addEventListener('scroll', () => {
    header.style.backgroundColor = 'grey'
 })
 
-const imgContent = document.querySelectorAll('.img-content')
-console.log(imgContent)
+
+const destinationHTwo = document.querySelector('.content-destination h2');
+const destinationImage = document.querySelector('.content-destination img');
 
 
-window.addEventListener('load', () => {
-    alert('hiiii')
+destinationImage.addEventListener('drag', () => {
+    destinationHTwo.textContent = 'whoa there'
 })
+
+destinationImage.addEventListener('dragend', () => {
+    destinationHTwo.textContent = 'Thats better, now pick a destination'
+})
+
+
+
+
+// window.addEventListener('load', () => {
+//     alert('running out of ideas for event listeners lol')
+// })
 
 
 
